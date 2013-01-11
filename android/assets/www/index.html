@@ -20,56 +20,55 @@
 <html>
     <head>
         <title>AVF Demo app</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" /><!-- I looked into this meta tag and its for phone number detection I'm going to leave it in becasue it can't hurt right now -->
+       
+        
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> <!--- this viewport meta tag has more attributes assigned to it than the one that i have been using so I'm going to try it out --->
         <link rel="stylesheet" href="css/mytheme.css" />
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
         <link rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
         
     
     
     </head>
     <body>
         <!-- financeBBT -->					
-<div data-role="page" id="home" data-theme="a">
-			<div data-role="header" data-position="fixed" data-position="fixed" data-position="fixed" data-theme="a">
+<section data-role="page" id="home" data-theme="a">
+			<header data-role="header" data-position="fixed" data-theme="a">
 				<h1>financeBBT</h1>
-			</div>			
+			</header>			
 	
 				
-			<div data-role="content" id="home-content" >
+			<section data-role="content" id="home-content" >
 										
-				<a href="#popupInfo" id="cta" data-rel="popup" data-shadow="false" data-role="button" style="text-align:left" data-iconpos="right"  data-icon="arrow-r" data-inline="false"  data-inset="false" data-theme="d"  >Get Started!</a>
-
-
-		<div data-role="collapsible-set">							
-			<div data-role="collapsible" id="mainNav"  data-iconpos="right"  data-icon="arrow-r" data-inset="false" data-mini="false">	
-				<h2>Native Features</h2>
-				<ul data-role="listview">	
-					<li><a href="#camera" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Camera</h3><p>Used for budget implementation attaching photos of receipts.</p></a></li>
-					<li><a href="#file" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>file</h3><p>Needed for access to attached receipts.</p></a></li>
-					<li><a href="#Media" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Media</h3><p>Integrate instructional videos on: finance, investing, saving and time management.</p></a></li>
-					<li><a href="#notification" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Notifications</h3><p>Alerts to organize daily budget and random reminders.</p></a></li>
-					<li><a href="#storage" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Storage</h3><p>Store receipts.</p></a></li>
-				</ul>	
-			</div>
-			<div data-role="collapsible" id="mainNav"  data-iconpos="right"  data-icon="arrow-r" data-inset="false" data-mini="false">	
-				<h2>JSON-P Data API's</h2>
-				<ul data-role="listview">	
-					<li><a href="#news" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Financial News Feed</h3><p>Integrate daily news into the app.</p></a></li>
-					<li><a href="#beyond" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Twitter</h3><p>I'm not sure exactly how this will be integrated at this time.</p></a></li>
-				</ul>	
-			</div>
-			<div data-role="collapsible" id="mainNav"  data-iconpos="right"  data-icon="arrow-r" data-inset="false" data-mini="false">	
-				<h2>Research</h2>
-				<ul data-role="listview">	
-					<li><a href="#w1" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Week One</h3></a></li>
-					<li><a href="#w2" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Week Two</h3></a></li>
-					<li><a href="#w3" style="text-align:left" data-role="button" data-iconpos="right"  data-icon="arrow-r" data-inset="true" ><h3>Week Three</h3></a></li>
-				</ul>	
-			</div>
-		</div>
+				<a href="#popupInfo" id="cta" data-rel="popup" data-shadow="false" data-role="button" style="text-align:left" data-iconpos="right" data-icon="arrow-r" data-inline="false"  data-inset="false" data-theme="d"  >Get Started!</a>
+			
+						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+							<h2>Native Features</h2>
+							<ul data-role="listview">
+								<li><a href="#camera">Camera</a></li>
+								<li><a href="#file">File</a></li>
+								<li><a href="#media">Media</a></li>
+								<li><a href="#notification">Notification</a></li>
+								<li><a href="#storage">Storage</a></li>
+							</ul>
+						</nav><!-- /collapsible -->
+						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+							<h2>JSON-P Data API's</h2>
+							<ul data-role="listview">
+								<li><a href="index.html">Financial News Feed</a></li>
+								<li><a href="index.html">Twitter</a></li>
+							</ul>
+						</nav><!-- /collapsible -->
+						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+							<h2>Research</h2>
+							<ul data-role="listview">
+								<li><a href="index.html">Week One</a></li>
+								<li><a href="index.html">Week Two</a></li>
+								<li><a href="index.html">Week Three</a></li>
+							</ul>
+						</nav><!-- /collapsible -->
 		<!--popup -->
 			<div data-role="popup" id="popupInfo" class="ui-content" data-tolerance="top:10px"data-theme="d" style="max-width:400px">
 				<div data-role="header"  data-theme="d">
@@ -80,14 +79,13 @@
 			</div><!--popup -->								
 					
 		
-	</div><!--content -->
-			<div data-role="footer" data-id="bbtfooter" data-position="fixed" data-theme="a" data-id="bbtfooter">	
+	</section><!--content -->
+			<footer data-role="footer" data-id="bbtfooter" data-position="fixed" data-theme="a" data-id="bbtfooter">	
 					
-								<h6>     &copy;2012 bbtMobi</h6>
-		</div>
-</div> <!-- financeBBT -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+								<h6>Matthew Richter AVF 1301</h6>
+		</footer>
+</section> <!-- financeBBT -->
+        
         <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
