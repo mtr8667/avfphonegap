@@ -1,6 +1,5 @@
-.ui-page.ui-body-a.ui-page-active {background: #f8fff8 url(../images/mobile_splash.png) no-repeat 50% 0px; }
+.ui-page.ui-body-a.ui-page-active {background: #c2e0d3 url(../images/mobile_splash.png) no-repeat 50% 0px; }
 /*div#mainNav {margin-top:192px;}*/
-/*.ui-page.ui-body-a.ui-page-active .ui-content .ui-btn#cta {background: rgba(255,255,255,.0); border-color: #ededed; }*/
+.ui-page.ui-body-a.ui-page-active .ui-content .ui-btn#cta {background: rgba(255,255,255,.0); border-color: #ededed; }
 section#home-content {margin-top:138px;margin-right:0px;margin-left:0px;padding-right:0px;padding-left:0px;}
-
-section#week1 {background: #f8fff8;}
+section#week1 {background: #c2e0d3;}

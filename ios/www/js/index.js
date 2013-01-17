@@ -47,3 +47,33 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+$(function() {
+	$.getJSON("http://search.twitter.com/search.json?q=stock%20buy%20rating&rpp=30&include_entities=true&result_type=mixed&callback=?",
+	function(data) {
+		console.log(data);
+		$("#data-tweet").html("<p>Current Data Retrieved!</p>");
+		for (i=0, j=data.results.length; i<j; i++) {
+			$("#datatweet")
+				.append("<li>" + 
+				"<p>" + "<img src= '" + data.results[i].profile_image_url +"' /><br />" +
+					data.results[i].text + "," + data.results[i].from_user_name + ", <em>" + data.results[i].created_at + "</em>" +
+					"</p>" +
+					"</li>");
+		}
+	});
+});
+$(function() {
+	$.getJSON("http://api.usatoday.com/open/articles/topnews/money?count=30&days=6&page=1&encoding=json&api_key=75rfk6x5m993y7qbcbyrdyvj",
+	function(data) {
+		console.log(data);
+		
+		$("#data-usa").html("<p>Current Data Retrieved!</p>");
+		for (i=0, j=data.stories.length; i<j; i++) {
+			$("#datausa")
+				.append("<li>" + 
+				"<p>" + data.stories[i].title +"<br />" +
+					data.stories[i].pubDate + "<br />" +  data.stories[i].link + "</p>" +
+					"</li>");
+		}
+	});
+});

@@ -44,7 +44,7 @@
 										
 				<a href="#popupInfo" id="cta" data-rel="popup" data-shadow="false" data-role="button" style="text-align:left" data-iconpos="right" data-icon="arrow-r" data-inline="false"  data-inset="false" data-theme="d"  >Get Started!</a>
 			
-						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
 							<h2>Native Features</h2>
 							<ul data-role="listview">
 								<li><a href="#camera">Camera</a></li>
@@ -54,17 +54,17 @@
 								<li><a href="#storage">Storage</a></li>
 							</ul>
 						</nav><!-- /collapsible -->
-						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
-							<h2>JSON-P Data API's</h2>
+						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+							<h2>Daily Finacial News</h2>
 							<ul data-role="listview">
-								<li><a href="index.html">Financial News Feed</a></li>
-								<li><a href="index.html">Twitter</a></li>
+								<li><a href="#usatoday">Today's USA Today's Money Section</a></li>
+								<li><a href="#twitter">Daily Buy Recommendations on Twitter</a></li>
 							</ul>
 						</nav><!-- /collapsible -->
-						<nav data-role="collapsible" data-theme="b" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
+						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
 							<h2>Research</h2>
 							<ul data-role="listview">
-								<li><a href="#week1">Week One</a></li>
+								<li><a href="#week1">Discussion & AVF Project Intent</a></li>
 								<li><a href="index.html">Week Two</a></li>
 								<li><a href="index.html">Week Three</a></li>
 							</ul>
@@ -115,13 +115,41 @@
 <p><small><b>5. Briefly describe some past lessons learned.</b></small></p>
 <p><small>Planning & organization is key with regard to development!  There are so many different components and parts to building a mobile app that anything less than a concentrated effort in these two areas could result in failure, leaving something out, missing a requirement or not being able to actually build the application.  So, while its a work in progress, I'm trying to develop a methodology/procedure to follow when developing a mobile app.  This includes breaking the project down by requirements and this means for Full Sail classes looking at all the weeks requirements in the beginning so you can see the big picture and plan accordingly.  I have also been trying to break things down by technology, framework, programming language etc. in order to help keep things in the in the right department so to speak.  This also helps with trouble shooting. Time management is also key getting hung up on a bug with an open source install is common place if you don't divide your work accordingly and get hung up on a bug too long you very well might run out of time. Lastly I'm learning to immediately go to the web when I believe I'm in bug land to attempt to research a solution in an effort to save the most precious of all commodities time.</small></p>
 
-
-		
 		</article>
 		<footer data-role="footer" data-id="bbtfooter" data-position="fixed">
 			<h6>Matthew Richter AVF 1301</h6>
 		</footer>
 </section><!-- week1 -->
+
+<!-- Twitter  -->
+	<section data-role="page" id="twitter" data-add-back-btn="true" data-theme="a" data-title="week one">
+		<header data-role="header" data-position="fixed">
+			<h6>Twitter</h6>
+		</header>
+		<article data-role="content" id="tweet">
+			<ul id="datatweet" data-role="listview" data-filter="true">
+					<li id="data-tweet">Getting Twitter ...</li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-id="bbtfooter" data-position="fixed">
+			<h6>Matthew Richter AVF 1301</h6>
+		</footer>
+</section><!-- Twitter -->
+
+<!-- USA Today  -->
+	<section data-role="page" id="usatoday" data-add-back-btn="true" data-theme="a" data-title="week one">
+		<header data-role="header" data-position="fixed">
+			<h6>USA Today Money</h6>
+		</header>
+		<article data-role="content" id="usa">
+			<ul id="datausa" data-role="listview" data-filter="true">
+					<li id="data-usa">Getting USA Today ...</li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-id="bbtfooter" data-position="fixed">
+			<h6>Matthew Richter AVF 1301</h6>
+		</footer>
+</section><!-- USA Today  -->
         
         <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
