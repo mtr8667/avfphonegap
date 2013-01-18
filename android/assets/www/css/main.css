@@ -1,5 +1,57 @@
-.ui-page.ui-body-a.ui-page-active {background: #c2e0d3 url(../images/mobile_splash.png) no-repeat 50% 0px; }
+/*
+.site {
+	background-color: #c2e0d3;
+	margin: 2px auto;
+	width:90%;
+}
+.sidebar {
+	
+	float: left;
+	text-align: center;
+	width: 32.446809%;
+}
+.content {
+	
+	margin-left: 34.574468%;
+	padding: 3.389830%;
+	width: 62.765957%;
+}
+*/
+.ui-page.ui-body-a {
+background: #c2e0d3 url(../images/mobile_splash.png) no-repeat 50% 0px;
+
+ }
 /*div#mainNav {margin-top:192px;}*/
 .ui-page.ui-body-a.ui-page-active .ui-content .ui-btn#cta {background: rgba(255,255,255,.0); border-color: #ededed; }
 section#home-content {margin-top:138px;margin-right:0px;margin-left:0px;padding-right:0px;padding-left:0px;}
 section#week1 {background: #c2e0d3;}
+
+@media screen and (max-width: 480px) {
+	
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+}
+
+/*
+.site {
+	margin: 2px auto;
+	width:90%;
+}
+.sidebar {
+	float: left;
+	text-align: center;
+	width: 32.446809%;
+}
+.content {
+	background-color: #c2e0d3;
+	margin-left: 34.574468%;
+	padding: 3.389830%;
+	width: 62.765957%;
+}
+*/

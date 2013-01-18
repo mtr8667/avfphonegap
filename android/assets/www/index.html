@@ -33,20 +33,23 @@
     
     </head>
     <body>
-        <!-- financeBBT -->						
+        					
+<div class="site"> <!-- site wrapper  -->
+
+<!-- financeBBT -->	
 <section data-role="page" id="home" data-theme="a">
 			<header data-role="header" data-position="fixed" data-theme="a">
 				<h1>financeBBT</h1>
 			</header>			
 	
 				
-			<section data-role="content" id="home-content" >
+			<section class="sidebar" data-role="content" id="home-content" >
 										
 				<a href="#popupInfo" id="cta" data-rel="popup" data-shadow="false" data-role="button" style="text-align:left" data-iconpos="right" data-icon="arrow-r" data-inline="false"  data-inset="false" data-theme="d"  >Get Started!</a>
 			
 						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
 							<h2>Native Features</h2>
-							<ul data-role="listview">
+							<ul class="mainmenu" data-role="listview">
 								<li><a href="#camera">Camera</a></li>
 								<li><a href="#file">File</a></li>
 								<li><a href="#media">Media</a></li>
@@ -55,15 +58,15 @@
 							</ul>
 						</nav><!-- /collapsible -->
 						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
-							<h2>Daily Finacial News</h2>
-							<ul data-role="listview">
+							<h2>Daily Financial News</h2>
+							<ul class="mainmenu" data-role="listview">
 								<li><a href="#usatoday">Today's USA Today's Money Section</a></li>
 								<li><a href="#twitter">Daily Buy Recommendations on Twitter</a></li>
 							</ul>
 						</nav><!-- /collapsible -->
 						<nav data-role="collapsible" data-theme="a" data-content-theme="d" data-iconpos="right" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true">
 							<h2>Research</h2>
-							<ul data-role="listview">
+							<ul class="mainmenu" data-role="listview">
 								<li><a href="#week1">Discussion & AVF Project Intent</a></li>
 								<li><a href="index.html">Week Two</a></li>
 								<li><a href="index.html">Week Three</a></li>
@@ -79,7 +82,7 @@
 			</div><!--popup -->								
 					
 		
-	</section><!--content -->
+	</section><!--sidebar -->
 			<footer data-role="footer" data-id="bbtfooter" data-position="fixed" data-theme="a" data-id="bbtfooter">	
 					
 								<h6>Matthew Richter AVF 1301</h6>
@@ -87,7 +90,7 @@
 </section> <!-- financeBBT -->
 
 <!-- week1  -->
-	<section data-role="page" id="week1" data-add-back-btn="true" data-theme="b" data-title="week one">
+	<section class="content" data-role="page" id="week1" data-add-back-btn="true" data-theme="b" data-title="week one">
 		<header data-role="header" data-position="fixed">
 			<h6>Discuss: Data Research, Project Intent</h6>
 		</header>
@@ -122,7 +125,7 @@
 </section><!-- week1 -->
 
 <!-- Twitter  -->
-	<section data-role="page" id="twitter" data-add-back-btn="true" data-theme="a" data-title="week one">
+	<section class="content" data-role="page" id="twitter" data-add-back-btn="true" data-theme="a" data-title="week one">
 		<header data-role="header" data-position="fixed">
 			<h6>Twitter</h6>
 		</header>
@@ -141,13 +144,13 @@
 </section><!-- Twitter -->
 
 <!-- USA Today  -->
-	<section data-role="page" id="usatoday" data-add-back-btn="true" data-theme="a" data-title="week one">
+	<section  class="content" data-role="page" id="usatoday" data-add-back-btn="true" data-theme="a" data-title="week one">
 		<header data-role="header" data-position="fixed">
 			<h6>USA Today Money</h6>
 		</header>
 		<div class="ui-body ui-body-d">
 		<h4 style="margin:.5em 0">Check out the latest news from USA Today's Money section!</h4>
-		<p>If your new to investing one of the best ways to learn about the industry is to read about what people are writing about. HTe articles below are refreshed daily and give you a good idea of what's going on in the industry today.</p>
+		<p>If your new to investing one of the best ways to learn about the industry is to read about what people are writing about. The articles below are refreshed daily and give you a good idea of what's going on in the industry today.</p>
 		</div>
 		<article data-role="content" id="usa">
 			<ul id="datausa" data-role="listview" data-filter="true">
@@ -158,7 +161,7 @@
 			<h6>Matthew Richter AVF 1301</h6>
 		</footer>
 </section><!-- USA Today  -->
-        
+</div> <!-- site wrapper  -->      
         <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
