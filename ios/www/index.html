@@ -37,7 +37,7 @@
 <div class="site"> <!-- site wrapper  -->
 
 <!-- financeBBT -->	
-<section data-role="page" id="home" data-theme="a">
+<div data-role="page" id="home" data-theme="a">
 			<header data-role="header" data-position="fixed" data-theme="a">
 				<h1>financeBBT</h1>
 			</header>			
@@ -68,7 +68,7 @@
 							<h2>Research</h2>
 							<ul class="mainmenu" data-role="listview">
 								<li><a href="#week1">Discussion & AVF Project Intent</a></li>
-								<li><a href="index.html">Week Two</a></li>
+								<li><a href="#week2">Discussion: Accessibility</a></li>
 								<li><a href="index.html">Week Three</a></li>
 							</ul>
 						</nav><!-- /collapsible -->
@@ -83,11 +83,11 @@
 					
 		
 	</section><!--sidebar -->
-			<footer data-role="footer" data-id="bbtfooter" data-position="fixed" data-theme="a" data-id="bbtfooter">	
+		<footer data-role="footer" data-id="bbtfooter" data-position="fixed" data-theme="a" data-id="bbtfooter">	
 					
 								<h6>Matthew Richter AVF 1301</h6>
 		</footer>
-</section> <!-- financeBBT -->
+</div> <!-- financeBBT -->
 
 <!-- week1  -->
 	<section class="content" data-role="page" id="week1" data-add-back-btn="true" data-theme="b" data-title="week one">
@@ -123,6 +123,42 @@
 			<h6>Matthew Richter AVF 1301</h6>
 		</footer>
 </section><!-- week1 -->
+
+<!-- week2  -->
+	<section class="content" data-role="page" id="week2" data-add-back-btn="true" data-theme="b" data-title="week two">
+		<header data-role="header" data-position="fixed">
+			<h6>Discuss: Data Research, Accessibility</h6>
+		</header>
+		<article data-role="content" id="week2">
+			<p><small><b>1. What are some of the ways that you could change your HTML in your Demo App to be more accessible?</b> </small></p>
+			  
+<p><small>Don't include Flash for starters or strip it out, screen readers have a problem with Flash video. Use HTML5 video for native controls, captions, descriptions, audio descriptions and sign language video. Make sure that all images and video have good descriptions associated with them by utilizing the "alt" attribute, most browsers will display or read this attribute if there is a problem displaying the image.  Make sure that your fonts are resizable/relative thus allowing the viewer to change the font size through the browser.  Also use semantic HTML tags. These tags are much more descriptive than div tags so when screen readers read your semantic HMTL much more information and understanding is relayed. You could also take advantage of HTML5's markup for captioning (webVTT), descriptions and subtitles when using video. Finally keep the presentation and functionality layers separate.</small></p> 
+
+<p><small><b>Visit a video service on the web and search for "Screen Reader Demo" and "Mobile Screen Reader". What are some of the common frustrations that you see among the examples given? How could you fix and or use them?
+</b></small></p>
+<p><small>Generally the current price point of screen readers excludes and estimated 85% of the market, they're expensive. Blind people can't see the cursor and have to memorize keyboard commands. Traditional browsers aren't much use to blind people due to the webpage being populated with images and graphics that are of no use to blind people so text browsers should be used to increase efficiency. Some of the other top frustrations of screen reader users are the page layout of the site causing confusion, poorly designed forms, misleading links, inaccessible PDFs or files, and screen reader crashes. Obviously designing a web environment keeping accessibility in mind is a good first step in easing these frustrations. By using semantic HTML websites through descriptive tag names can effectively convey a sites layout reducing confusion. Also using software to cleanup and check your code and assist in reducing frustrations by identifying missing "alt" attributes broken links and other problems with your websites code. 
+</small></p>
+
+<p><small><b>3. List two devices and some of the features that are made specifically to support accessibility.
+</b></small></p>
+<p><small>Well I never looked at it this way before but SIRI the Apple iOS assistant is obviously a device made specifically to support accessibility. Just by pressing a button you can bring up the SIRI assistant (there is an audible beep when SIRI is ready). You can then speak your request and SIRI will search its database for an answer for you.  If no answer is found you are prompted with an option to continue your search on the web. No typing is generally necessary when using SIRI so not only does this help the blind but also the physically impaired.  For my second device I would like to use the iPhone itself specifically the touch based interface. As stated above one of the main frustrations with impaired users using screen readers is the fact that they have to memorize the hot keys and quick key in order to work with the screen reading software to navigate around the webpage.  Having a touch based interface can remove much of this frustration by letting simple finger gestures take the place of sophisticated key commands.
+
+</small></p>
+  
+<p><small><b>4. List two apps that are made specifically to support accessibility.</b></small></p>
+<p><small>Talking Calculator by Adam Croser has full voice over support and the option for users to use speech for answers, button names and formulas. As you move your finger over the screen the names of buttons are spoken to you. In addition the app is customizable for different levels of vision. Normal to low vision would have large, clear buttons with optional speech while low vision has high contrast display mode with optional speech etc.
+
+Digit-Eyes QR Code/Barcode Reader Labeler by Digital Miracles, LLC allows users to scan UPC / EAN codes a hear the names of over 34 million products. In addition the app/ site allows user to download there own QR codes to place on and label whatever they want with a voice recording. So a blind user could label items in the fridge or panty etc. When the item is scanned it reads the users recording describing the item. 
+
+The website that I used for much of this information literally had hundreds of these accessibility apps broken out into 20 or so categories. Pretty impressive to know that all this exists out there.
+</small></p>     
+
+		</article>
+		<footer data-role="footer" data-id="bbtfooter" data-position="fixed">
+			<h6>Matthew Richter AVF 1301</h6>
+		</footer>
+</section><!-- week2 -->
+
 
 <!-- Twitter  -->
 	<section class="content" data-role="page" id="twitter" data-add-back-btn="true" data-theme="a" data-title="week one">
